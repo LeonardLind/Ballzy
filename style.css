@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Lato", sans-serif;
+    overflow-x: hidden;
+  }
+  
+  canvas {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
+  
+  .ball-text {
+    position: fixed;
+    z-index: 2;
+    color: #f3d2bf;
+    font-size: 4.5rem;
+    right: 15%;
+    bottom: 40%;
+    transform: translate(-20%, -40%);
+  }
+
+  .get-ballzy-button {
+    position: fixed;
+    display: block;
+    z-index: 2; /* Use relative positioning */
+    right: 22%;
+    bottom: 30%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #f3d2bf; /* Border color */
+    color: #f3d2bf; /* Text color */
+    background-color: transparent; /* Transparent background */
+    padding: 20px 40px; /* Padding */
+    font-size: 1.5625rem; /* Font size */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Cursor style */
+    margin-top: 10px; 
+    margin-left: auto; 
+    margin-right: auto;
+  }
+  
+  
+  @media screen and (max-width: 1024px) {
+    .ball-text {
+      font-size: 2rem;
+      right: 25%;
+      bottom: 45%;
+      transform: translate(50%, 50%);
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    .get-ballzy-button {
+        font-size: 0.75rem;
+        right: 15%;
+        bottom: 35%;
+        margin-top: 5px; 
+        padding: 10px 20px;
+        
+
+    }
+  }
